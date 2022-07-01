@@ -759,10 +759,10 @@ namespace SGA
 		}
 	}
 
-	void GameState::printBoard() const
+
+	std::string GameState::printBoard() const
 	{
 		std::string map;
-		std::cout << "---------[Board]---------" << std::endl;
 		//Add tiles
 		for (size_t y = 0; y < board.getHeight(); ++y)
 		{
@@ -788,9 +788,9 @@ namespace SGA
 			if (!entity.isNeutral())
 				map[static_cast<int>(static_cast<int>(entityMapIndex) + 1)] = ownerID;
 		}
-		//Print map
-		std::cout << map;
+		return map;
 	}
+
 
 	void GameState::printBoard(int playerID) const
 	{

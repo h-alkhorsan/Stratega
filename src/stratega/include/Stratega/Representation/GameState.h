@@ -356,7 +356,7 @@ namespace SGA
 		/// <summary>
 		// /Print view of the map of the current state
 		/// </summary>
-		void printBoard() const;
+		std::string printBoard() const;
 
 		/// <summary>
 		/// Print view of the map of the current state applying fog

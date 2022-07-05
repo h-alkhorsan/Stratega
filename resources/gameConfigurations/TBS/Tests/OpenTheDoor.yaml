@@ -1,7 +1,7 @@
 GameConfig:
     Type: TBS
     RoundLimit: 100
-    FogOfWar: true
+    FogOfWar: false
 
 Agents:
     - HumanAgent
